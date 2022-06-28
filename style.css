@@ -1,0 +1,87 @@
+:root {
+       --main-color: #ae9cff;
+}
+* {
+       padding: 0;
+       margin: 0;
+       box-sizing: border-box;
+}
+body {
+       font-family: Arial, Helvetica, sans-serif;
+       background-color: var(--main-color);
+       height: 100vh;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding: 10px;
+}
+.container {
+       background-color: #fff;
+       padding: 50px 30px;
+       border-radius: 15px;
+       width: 500px;
+       max-width: 100%;
+}
+.search {
+       display: flex;
+}
+.search #word-search {
+       border: none;
+       outline: none;
+       border-bottom: 3px solid var(--main-color);
+       margin-right: 20px;
+       padding: 10px 5px;
+       font-size: 18px;
+       width: 75%;
+}
+.search #btn-search {
+       width: 25%;
+       border: none;
+       background-color: var(--main-color);
+       color: #fff;
+       border-radius: 10px;
+       font-size: 17px;
+       outline: none;
+       cursor: pointer;
+}
+.container .word-standard {
+       margin-top: 80px;
+       display: flex;
+       justify-content: space-between;
+}
+.container .word-standard h3 {
+       font-size: 35px;
+       color: #1f194c;
+}
+.container .word-standard button {
+       border: none;
+       outline: none;
+       padding: 10px;
+       font-size: 20px;
+       background-color: transparent;
+       cursor: pointer;
+       color: var(--main-color);
+}
+.container .word-pos {
+       display: flex;
+       gap: 10px;
+       margin: 5px 0 20px 0;
+       color: #b3b6d4;
+}
+.word-meaning {
+       color: #575a7b;
+       line-height: 1.4;
+}
+.word-example {
+       color: #575a7b;
+       border-left: 3px solid var(--main-color);
+       padding-left: 15px;
+       margin-top: 30px;
+       font-style: italic;
+       line-height: 1.4;
+}
+.error {
+       text-align: center;
+       margin-top: 80px;
+       font-size: 35px;
+}
